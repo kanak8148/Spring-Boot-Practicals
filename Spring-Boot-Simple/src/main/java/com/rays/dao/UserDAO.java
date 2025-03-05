@@ -87,7 +87,7 @@ public class UserDAO {
 		}
 
 		cq.where(predicateList.toArray(new Predicate[predicateList.size()]));
-
+		
 		TypedQuery<UserDTO> tq = entityManager.createQuery(cq);
 
 		if (pageSize > 0) {
